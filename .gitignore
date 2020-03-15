@@ -1,11 +1,16 @@
 #test coverage
 .github.*
+
 workflows.*
+
 *.yml
+
 __tests__
 
 __.*
+
 # Logs
+
 logs
 *.log
 npm-debug.log*

@@ -1,9 +1,9 @@
 {
-  "name": "merch-dropper-be",
+  "name": "shirthawk",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Lambda-School-Labs/Merch-Dropper-be.git",
-  "author": "<merchdropper20@gmail.com>",
+  "repository": "https://github.com/Jeris-Manning/shirthawk-be.git",
+  "author": "<the.goose.moose@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",

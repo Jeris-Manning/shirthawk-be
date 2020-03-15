@@ -1,8 +1,10 @@
 #test coverage
-*.github
-workflows
+.github.*
+workflows.*
 *.yml
-__tests__/
+__tests__
+
+__.*
 # Logs
 logs
 *.log

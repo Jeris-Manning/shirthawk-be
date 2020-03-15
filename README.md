@@ -1,10 +1,7 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/7eb2c53b1f21eab6e1de/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/Merch-Dropper-be/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/7eb2c53b1f21eab6e1de/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/Merch-Dropper-be/test_coverage)
 
 # API Documentation
 
-#### Backend deployed at [Heroku](https://merchdropper-production.herokuapp.com) <br>
+#### Backend deployed at [Heroku](https://shirthawk.herokuapp.com) <br>
 
 ## Getting started
 

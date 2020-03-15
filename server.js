@@ -53,7 +53,7 @@ server.use("/api/payments", paymentRouter);
 
 //testing that the server works
 server.get("/", (req, res) => {
-  res.status(200).json({ status: "The Merch Dropper server is running!!" });
+  res.status(200).json({ status: "Shirt Hawk is in the sky." });
 });
 
 module.exports = server;

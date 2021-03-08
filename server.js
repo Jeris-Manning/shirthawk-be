@@ -17,7 +17,10 @@ import paymentRouter from "./crudOperations/paymentOperations/paymentRouter";
 const server = express();
 
 server.use(helmet());
-server.use(cors());
+server.use(cors({
+  origin: true,
+  credentials: true
+}));
 server.use(json());
 
 server.use(

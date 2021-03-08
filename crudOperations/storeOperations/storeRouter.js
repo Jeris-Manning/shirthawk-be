@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Stores = require("../storeOperations/storeModel");
-const Models = require("../helperVariables/models");
+import Stores from "../storeOperations/storeModel";
+import Models from "../helperVariables/models";
 
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
@@ -150,4 +150,4 @@ router.delete("/:store_name", async (req, res) => {
 // });
 
 // Export router
-module.exports = router;
+export default router;

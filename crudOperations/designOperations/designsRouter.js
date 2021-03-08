@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Designs = require("../designOperations/designsModel");
-const Models = require("../helperVariables/models");
+import Designs from "../designOperations/designsModel";
+import Models from "../helperVariables/models";
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
 // @desc     Post a Design
@@ -111,4 +111,4 @@ router.delete("/:designID", async (req, res) => {
 });
 
 // Export router
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const db = require("../../databaseOperations/db-config");
+import db from "../../databaseOperations/db-config";
 
 class Model {
   constructor(tableName) {
@@ -162,4 +162,4 @@ async function addEntry(tableName, entry, returnTables) {
   return addedItem;
 }
 
-module.exports = { Users, Stores, Designs, Quotes, Orders, Products, addEntry };
+export default { Users, Stores, Designs, Quotes, Orders, Products, addEntry };

@@ -1,9 +1,6 @@
-const db = require("../../databaseOperations/db-config");
+import db from "../../databaseOperations/db-config";
 
-module.exports = {
-  // insertStoreUsers,
-  // getStoresUsers
-};
+
 
 //FUTURE RELEASE////////////// lets a store have multiple users
 // function insertStoreUsers(store_name, username) {

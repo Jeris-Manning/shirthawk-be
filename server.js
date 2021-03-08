@@ -1,24 +1,24 @@
-const express = require("express");
-const helmet = require("helmet");
-const cors = require("cors");
-const morgan = require("morgan");
-const colors = require("colors");
+import express, { json } from "express";
+import helmet from "helmet";
+import cors from "cors";
+import morgan from "morgan";
+import colors from "colors";
 
 //////    import Router files    //////
-const authRouter = require("./authOperations/authRouter");
-const userRouter = require("./crudOperations/userOperations/userRouter");
-const storeRouter = require("./crudOperations/storeOperations/storeRouter");
-const orderRouter = require("./crudOperations/orderOperations/orderRouter");
-const quoteRouter = require("./crudOperations/quoteOperations/quoteRouter");
-const designsRouter = require("./crudOperations/designOperations/designsRouter");
-const productRouter = require("./crudOperations/productOperations/productRouter");
-const paymentRouter = require("./crudOperations/paymentOperations/paymentRouter");
+import authRouter from "./authOperations/authRouter";
+import userRouter from "./crudOperations/userOperations/userRouter";
+import storeRouter from "./crudOperations/storeOperations/storeRouter";
+import orderRouter from "./crudOperations/orderOperations/orderRouter";
+import quoteRouter from "./crudOperations/quoteOperations/quoteRouter";
+import designsRouter from "./crudOperations/designOperations/designsRouter";
+import productRouter from "./crudOperations/productOperations/productRouter";
+import paymentRouter from "./crudOperations/paymentOperations/paymentRouter";
 
 const server = express();
 
 server.use(helmet());
 server.use(cors());
-server.use(express.json());
+server.use(json());
 
 server.use(
   morgan(function (tokens, req, res) {
@@ -56,4 +56,4 @@ server.get("/", (req, res) => {
   res.status(200).json({ status: "Shirt Hawk is in the sky." });
 });
 
-module.exports = server;
+export default server;

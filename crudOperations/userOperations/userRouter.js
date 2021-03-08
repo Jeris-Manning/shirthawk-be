@@ -1,6 +1,6 @@
 const router = require("express").Router();
 // const Users = require("./userModel");
-const Models = require("../helperVariables/models");
+import Models from "../helperVariables/models";
 
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
@@ -117,4 +117,4 @@ router.delete("/:username", async (req, res) => {
 // });
 
 // Export router
-module.exports = router;
+export default router;

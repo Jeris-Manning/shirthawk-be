@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Quotes = require("../quoteOperations/quoteModel");
-const Models = require("../helperVariables/models");
+import { quoteMaker } from "../quoteOperations/quoteModel";
+import Models from "../helperVariables/models";
 // const orderHelper = require("../helperVariables/orderHelpers");
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
@@ -11,7 +11,7 @@ router.post("/", async (req, res) => {
   try {
     let data = req.body;
     if (data) {
-      const spResponse = await Quotes.quoteMaker(data.spInfo);
+      const spResponse = await quoteMaker(data.spInfo);
       if (spResponse) {
         let quote = {
           userID: data.quoteInfo.userID,
@@ -188,4 +188,4 @@ router.delete("/ordertoken/:orderToken", async (req, res) => {
 });
 
 // Export router
-module.exports = router;
+export default router;

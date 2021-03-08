@@ -1,9 +1,9 @@
-const server = require('./server');
-const dotenv = require('dotenv');
-const colors = require('colors');
+import server from './server';
+import { config } from 'dotenv';
+import colors from 'colors';
 
 ////setting up environmental variables////
-dotenv.config({ path: './config/config.env' });
+config({ path: './config/config.env' });
 
 const PORT = process.env.PORT || 4000;
 

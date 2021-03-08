@@ -2,6 +2,9 @@
   "name": "shirthawk",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "^12.13.0"
+  },
   "repository": "https://github.com/Jeris-Manning/shirthawk-be.git",
   "author": "<the.goose.moose@gmail.com>",
   "license": "MIT",

@@ -1,16 +1,14 @@
 const express = require('express');
 const server = express();
+// const cors = require('cors');
+const helmet = require('helmet');
 // const helmet = require('helmet');
 // const morgan = require('morgan');
 
 // server.use(express.json());
 // server.use(helmet());
 
-server.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+
 
 // server.use(morgan('immediate'));
 
@@ -30,6 +28,22 @@ const paymentRouter = require('./crudOperations/paymentOperations/paymentRouter'
 //   origin: true,
 //   credentials: true
 // }
+
+server.use(express.json());
+server.use(helmet());
+// server.use(cors());
+server.use(function (req, res, next) {
+  // res.header(
+  //     'Access-Control-Allow-Headers',
+  //     'authorization,content-type,user_id'
+  // );
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+      'Access-Control-Allow-Headers',
+      'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
+  next();
+});
 
 //////    Use routers    ///////
 server.use('/api/auth', authRouter);

@@ -7,7 +7,7 @@ const morgan = require('morgan');
 server.use(helmet());
 server.use(cors());
 server.use(express.json());
-server.use(morgan(immediate));
+server.use(morgan('immediate'));
 
 //////    import Router files    //////
 const authRouter = require('./authOperations/authRouter');

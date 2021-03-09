@@ -35,8 +35,11 @@ router.post("/", async (req, res) => {
 // @route    GET /api/designs
 // @access   Private
 router.get("/", async (req, res) => {
+
   try {
+
     const designs = await Models.Designs.find();
+    console.log(designs, "DESIGNS?!?")
     res.status(200).json(designs);
   } catch (error) {
     res

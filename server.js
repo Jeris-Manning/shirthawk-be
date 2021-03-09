@@ -1,10 +1,10 @@
 const express = require('express');
 const server = express();
-const helmet = require('helmet');
-const morgan = require('morgan');
+// const helmet = require('helmet');
+// const morgan = require('morgan');
 
-server.use(express.json());
-server.use(helmet());
+// server.use(express.json());
+// server.use(helmet());
 
 server.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -12,7 +12,7 @@ server.use(function(req, res, next) {
   next();
 });
 
-server.use(morgan('immediate'));
+// server.use(morgan('immediate'));
 
 //////    import Router files    //////
 const authRouter = require('./authOperations/authRouter');

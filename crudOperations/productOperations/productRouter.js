@@ -1,6 +1,6 @@
 const router = require("express").Router();
-import { ShirtMaker } from "./productModel";
-import Models from "../helperVariables/models";
+const Products = require("./productModel");
+const Models = require("../helperVariables/models");
 
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
@@ -48,7 +48,7 @@ router.post("/mockup", async (req, res) => {
     let data = req.body;
 
     if (data) {
-      const URL = await ShirtMaker(data);
+      const URL = await Products.ShirtMaker(data);
 
       if (URL) {
         res.status(201).json({
@@ -143,4 +143,4 @@ router.delete("/:id", async (req, res) => {
 });
 
 // Export router
-export default router;
+module.exports = router;

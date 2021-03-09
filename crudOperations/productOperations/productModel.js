@@ -1,6 +1,6 @@
-import db from "../../databaseOperations/db-config";
-import { post } from "axios";
-export default {
+const db = require("../../databaseOperations/db-config");
+const axios = require("axios");
+module.exports = {
   ShirtMaker
 };
 
@@ -13,7 +13,7 @@ async function ShirtMaker(data) {
   };
 
   if (data) {
-    const mockupURL = await post(
+    const mockupURL = await axios.post(
       "https://api.scalablepress.com/v3/mockup",
       data,
       config

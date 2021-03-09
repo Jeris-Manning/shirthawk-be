@@ -1,6 +1,6 @@
 const router = require("express").Router();
-import { orderMaker } from "../orderOperations/orderModel";
-import Models from "../helperVariables/models";
+const Orders = require("../orderOperations/orderModel");
+const Models = require("../helperVariables/models");
 
 // const restricted = require("../../globalMiddleware/restrictedMiddleware");
 
@@ -11,7 +11,7 @@ router.post("/", async (req, res) => {
   try {
     let data = req.body;
     if (data) {
-      const spResponse = await orderMaker(data.spInfo);
+      const spResponse = await Orders.orderMaker(data.spInfo);
       if (spResponse) {
         let order = {
           userID: data.orderInfo.userID,
@@ -249,4 +249,4 @@ router.delete("/sporderid/:spOrderID", async (req, res) => {
 });
 
 // Export router
-export default router;
+module.exports = router;

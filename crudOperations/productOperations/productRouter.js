@@ -82,6 +82,10 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/duck", async (req, res)=>{
+  console.log("Duck works.")
+})
+
 // @desc     Get an product by id
 // @route    GET /api/products/:id
 // @access   Private

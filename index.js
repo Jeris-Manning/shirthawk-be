@@ -1,17 +1,13 @@
 const server = require('./server');
-const dotenv = require('dotenv');
-const colors = require('colors');
+const { development } = require('./knexfile');
 
 ////setting up environmental variables////
-
+const envo = process.env.NODE_ENV || 'development';
 const PORT = process.env.PORT || 5432;
 
 server.listen(
     PORT,
-    console.log(
-        `Server is running in ${process.env.NODE_ENV} mode on port ${PORT}`
-            .yellow.bold
-    )
+    console.log(`Server is running in ${envo} mode on port ${PORT}`)
 );
 
 process.on('unhandledRejection', function (reason, promise) {

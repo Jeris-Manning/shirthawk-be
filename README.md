@@ -96,9 +96,6 @@ To get the server running locally:
 
 <br> <br>
 
-# Data Models
-
-https://dbdesigner.page.link/TmhBUamZbHMiXanV8
 
 ### Users
 
@@ -378,26 +375,6 @@ In order for the app to function correctly, the user must set up their own envir
 - NODE_ENV=development --- set to "development" until ready for "production"
 - JWT_SECRET=[any randomly generated or complex string will work here]
 
-## Contributing
-
-- When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
-
-Please note we have a [code of conduct](./code_of_conduct.md). Please follow it in all your interactions with the project.
-
-### Issue/Bug Request
-
-**If you are having an issue with the existing project code, please submit a bug report under the following guidelines:**
-
-- Check first to see if your issue has already been reported.
-- Check to see if the issue has recently been fixed by attempting to reproduce the issue using the latest master branch in the repository.
-- Create a live example of the problem.
-- Submit a detailed bug report including your environment & browser, steps to reproduce the issue, actual and expected outcomes, where you believe the issue is originating from, and any potential solutions you have considered.
-
-### Attribution
-
-These contribution guidelines have been adapted from [this good-Contributing.md-template](https://gist.github.com/PurpleBooth/b24679402957c63ec426).
-
 ## Documentation
 
-1. See [Frontend Documentation](https://github.com/Lambda-School-Labs/Merch-Dropper-fe/blob/master/README.md) for details on the frontend of our project.
-2. See [Postman Backend Documentation](https://documenter.getpostman.com/view/9427795/SWTHYuA5?version=latest) for more details on the backend of our project.
+1. See [Frontend Documentation](https://github.com/Jeris-Manning/shirthawk-fe/blob/master/README.md) for details on the frontend of the project.

@@ -26,7 +26,7 @@ To get the server running locally:
 
 ## Endpoints
 
-### base URL `https://merchdropper-production.herokuapp.com/`
+### base URL `https://shirthawk.herokuapp.com/.herokuapp.com/`
 
 <br> <br>
 

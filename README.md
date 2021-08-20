@@ -12,17 +12,11 @@ To get the server running locally:
 3. **yarn server** to start the local server
 4. **yarn test** to start server using testing environment
 
-### Backend framework goes here
+### Backend framework
 
 - NodeJS
 - Express,
 - Postgres
-
-#### Why did you choose this framework?
-
-- Ease of use
-- Familiarity
-- A true Relational Database best serves our purposes at this time
 
 ## Endpoints
 
